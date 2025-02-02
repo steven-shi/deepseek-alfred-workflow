@@ -1302,7 +1302,7 @@ function run() {
 				<key>footertext</key>
 				<string>↩ Ask question · ⌘↩ New chat · ⌥↩ Copy last · ⌃↩ Copy all · ⇧↩ Interrupt</string>
 				<key>inputfile</key>
-				<string>chatgpt</string>
+				<string>deepseek</string>
 				<key>inputtype</key>
 				<integer>1</integer>
 				<key>loadingtext</key>
@@ -1822,39 +1822,6 @@ function run() {
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>01A59F71-DA66-43E4-A948-1F2B653710DF</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>behaviour</key>
-				<integer>2</integer>
-				<key>fontmode</key>
-				<integer>0</integer>
-				<key>fontsizing</key>
-				<integer>0</integer>
-				<key>footertext</key>
-				<string>↩ New prompt · ⌘↩ Archive images · ⌥↩ Reveal last image</string>
-				<key>inputfile</key>
-				<string>dalle</string>
-				<key>inputtype</key>
-				<integer>1</integer>
-				<key>loadingtext</key>
-				<string>Querying DeepSeek API…</string>
-				<key>outputmode</key>
-				<integer>0</integer>
-				<key>scriptinput</key>
-				<integer>2</integer>
-				<key>spellchecking</key>
-				<integer>0</integer>
-				<key>stackview</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.userinterface.text</string>
-			<key>uid</key>
-			<string>C05A6557-586B-4B86-AFFB-459590991D55</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
