@@ -707,13 +707,13 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>Vítor Galvão</string>
+	<string>chooeki</string>
 	<key>description</key>
-	<string>OpenAI integrations</string>
+	<string>An Alfred workflow for DeepSeek chat.</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>ChatGPT / DALL-E</string>
+	<string>deepseek-alfred</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -750,7 +750,7 @@
 				<key>acceptsurls</key>
 				<false/>
 				<key>name</key>
-				<string>Ask ChatGPT</string>
+				<string>Ask DeepSeek</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.universalaction</string>
@@ -1207,7 +1207,7 @@ kill "${pid_stream}"
 			<key>config</key>
 			<dict>
 				<key>text</key>
-				<string>Ask ChatGPT '{query}'</string>
+				<string>Ask DeepSeek '{query}'</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.fallback</string>
@@ -1306,7 +1306,7 @@ function run() {
 				<key>inputtype</key>
 				<integer>1</integer>
 				<key>loadingtext</key>
-				<string>Querying ChatGPT API…</string>
+				<string>Querying DeepSeek API…</string>
 				<key>outputmode</key>
 				<integer>1</integer>
 				<key>scriptinput</key>
@@ -1457,7 +1457,7 @@ function run() {
 				<key>subtext</key>
 				<string>↩ Continue chat · ⌘↩ New chat · ⌥↩ Chat history</string>
 				<key>text</key>
-				<string>Ask ChatGPT</string>
+				<string>Ask DeepSeek</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -1664,7 +1664,7 @@ function run() {
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>ChatGPT Chat History</string>
+				<string>DeepSeek Chat History</string>
 				<key>type</key>
 				<integer>7</integer>
 				<key>withspace</key>
@@ -1841,7 +1841,7 @@ function run() {
 				<key>inputtype</key>
 				<integer>1</integer>
 				<key>loadingtext</key>
-				<string>Querying DALL·E API…</string>
+				<string>Querying DeepSeek API…</string>
 				<key>outputmode</key>
 				<integer>0</integer>
 				<key>scriptinput</key>
@@ -1902,32 +1902,14 @@ function run() {
 	<key>readme</key>
 	<string>## Setup
 
-1. Create an OpenAI account and [log in](https://platform.openai.com/login?launch).
-2. On the [API keys page](https://platform.openai.com/api-keys), click `+ Create new secret key`.
-3. Name your new secret key and click `Create secret key`.
-4. Copy your secret key and add it to the [Workflow's Configuration](https://www.alfredapp.com/help/workflows/user-configuration/).
+1. Create a DeepSeek account and get your API key
+2. Add your API key to the [Workflow's Configuration](https://www.alfredapp.com/help/workflows/user-configuration/)
 
 ## Usage
 
-### ChatGPT
+Query DeepSeek via the `deepseek` keyword
 
-Query ChatGPT via the `chatgpt` keyword, the [Universal Action](https://www.alfredapp.com/help/features/universal-actions/), or the [Fallback Search](https://www.alfredapp.com/help/features/default-results/fallback-searches/).
-
-![Start ChatGPT query](images/about/chatgptkeyword.png)
-
-![Querying ChatGPT](images/about/chatgpttextview.png)
-
-* &lt;kbd&gt;↩&lt;/kbd&gt; Ask a new question.
-* &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Clear and start new chat.
-* &lt;kbd&gt;⌥&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Copy last answer.
-* &lt;kbd&gt;⌃&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Copy full chat.
-* &lt;kbd&gt;⇧&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Stop generating answer.
-
-#### Chat History
-
-View Chat History with ⌥↩ in the `chatgpt` keyword. Each result shows the first question as the title and the last as the subtitle.
-
-![Viewing chat histories](images/about/chatgpthistory.png)
+View Chat History with ⌥↩ in the `deepseek` keyword. Each result shows the first question as the title and the last as the subtitle.
 
 &lt;kbd&gt;↩&lt;/kbd&gt; to archive the current chat and load the selected one. Older chats can be trashed with the `Delete` [Universal Action](https://www.alfredapp.com/help/features/universal-actions/). Select multiple chats with the [File Buffer](https://www.alfredapp.com/help/features/file-search/#file-buffer).
 
@@ -2372,6 +2354,10 @@ View Chat History with ⌥↩ in the `chatgpt` keyword. Each result shows the fi
 						<string>DeepSeek Chat</string>
 						<string>deepseek-chat</string>
 					</array>
+					<array>
+						<string>DeepSeek Reasoner</string>
+						<string>deepseek-reasoner</string>
+					</array>
 				</array>
 			</dict>
 			<key>description</key>
@@ -2421,38 +2407,13 @@ View Chat History with ⌥↩ in the `chatgpt` keyword. Each result shows the fi
 				<integer>3</integer>
 			</dict>
 			<key>description</key>
-			<string>Initial message to guide ChatGPT on the answers you expect.</string>
+			<string>Initial message to guide DeepSeek on the answers you expect.</string>
 			<key>label</key>
 			<string>System Prompt</string>
 			<key>type</key>
 			<string>textarea</string>
 			<key>variable</key>
 			<string>system_prompt</string>
-		</dict>
-		
-		
-		
-		
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>default</key>
-				<string></string>
-				<key>placeholder</key>
-				<string>Optional OpenAI Organisation Identifier</string>
-				<key>required</key>
-				<false/>
-				<key>trim</key>
-				<true/>
-			</dict>
-			<key>description</key>
-			<string>Get it at https://platform.openai.com/account/organization</string>
-			<key>label</key>
-			<string>Organisation ID</string>
-			<key>type</key>
-			<string>textfield</string>
-			<key>variable</key>
-			<string>openai_org_id</string>
 		</dict>
 	</array>
 	<key>variables</key>
