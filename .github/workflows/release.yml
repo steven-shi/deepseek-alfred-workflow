@@ -1,0 +1,28 @@
+name: Create Release
+
+on:
+  push:
+    tags:
+      - 'v*' # Trigger on version tags
+
+jobs:
+  build:
+    runs-on: ubuntu-latest # Changed to Ubuntu - faster and lighter
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Create Workflow Package
+        run: |
+          # Create the workflow package
+          zip -r "DeepSeek.alfredworkflow" * -x "*.DS_Store" "install.sh" ".git/*" ".github/*"
+      
+      - name: Create Release
+        id: create_release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: DeepSeek.alfredworkflow
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -112,19 +112,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>2DFDEB25-8ABB-4A11-A363-0879F9878137</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>BD3EE72E-D542-4AEB-AED1-EA3C1F7BF6EC</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>2F3B5565-0BBD-4DC6-962B-BEF7277AC599</key>
 		<array>
 			<dict>
@@ -332,19 +319,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>98D8AB67-AA1E-452D-9E1D-3BE47B471BA7</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>0052DD7D-01DA-4E09-8B83-3F4994975B5F</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>A4782A1E-2A93-401B-9CB7-1D8770AD510E</key>
 		<array>
 			<dict>
@@ -428,19 +402,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>7CE25BF5-0AF8-411E-8A05-244BF7CA878F</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>BD3EE72E-D542-4AEB-AED1-EA3C1F7BF6EC</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>98D8AB67-AA1E-452D-9E1D-3BE47B471BA7</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -536,19 +497,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>C05A6557-586B-4B86-AFFB-459590991D55</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>C81D4557-D55C-4B23-8FB3-B28519D292A0</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>2DFDEB25-8ABB-4A11-A363-0879F9878137</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1699,172 +1647,6 @@ function run() {
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>tasksettings</key>
-				<dict>
-					<key>target_path</key>
-					<string>{var:dalle_images_folder}</string>
-				</dict>
-				<key>taskuid</key>
-				<string>com.alfredapp.automation.core/files-and-folders/directory.children.sort</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.automation.task</string>
-			<key>uid</key>
-			<string>2DFDEB25-8ABB-4A11-A363-0879F9878137</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>tasksettings</key>
-				<dict>
-					<key>save_in</key>
-					<string>{var:archive_dir}</string>
-				</dict>
-				<key>taskuid</key>
-				<string>com.alfredapp.automation.core/files-and-folders/finder.move</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.automation.task</string>
-			<key>uid</key>
-			<string>98D8AB67-AA1E-452D-9E1D-3BE47B471BA7</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>tasksettings</key>
-				<dict>
-					<key>target_path</key>
-					<string>{var:archive_dir}</string>
-				</dict>
-				<key>taskuid</key>
-				<string>com.alfredapp.automation.core/files-and-folders/directory.new</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.automation.task</string>
-			<key>uid</key>
-			<string>C81D4557-D55C-4B23-8FB3-B28519D292A0</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>externaltriggerid</key>
-				<string>continue_images</string>
-				<key>passinputasargument</key>
-				<false/>
-				<key>passvariables</key>
-				<false/>
-				<key>workflowbundleid</key>
-				<string>self</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.callexternaltrigger</string>
-			<key>uid</key>
-			<string>0052DD7D-01DA-4E09-8B83-3F4994975B5F</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>tasksettings</key>
-				<dict>
-					<key>match_string</key>
-					<string>public.png</string>
-				</dict>
-				<key>taskuid</key>
-				<string>com.alfredapp.automation.core/files-and-folders/file.uti.matching</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.automation.task</string>
-			<key>uid</key>
-			<string>BD3EE72E-D542-4AEB-AED1-EA3C1F7BF6EC</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>availableviaurlhandler</key>
-				<false/>
-				<key>triggerid</key>
-				<string>continue_images</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>C7C34D1A-42E0-4C94-B94D-C344D3EE63CE</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>archive_dir</key>
-					<string>{var:dalle_images_folder}/Archive</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>01A59F71-DA66-43E4-A948-1F2B653710DF</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>path</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.revealfile</string>
-			<key>uid</key>
-			<string>61B83861-C1E7-4430-9D5B-399018364F26</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>tasksettings</key>
-				<dict>
-					<key>target_path</key>
-					<string>{var:dalle_images_folder}</string>
-				</dict>
-				<key>taskuid</key>
-				<string>com.alfredapp.automation.core/files-and-folders/directory.children.sort.added.leading.1</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.automation.task</string>
-			<key>uid</key>
-			<string>6EE7D872-0140-4B1B-B21A-D233250E9CC4</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		
-		<dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.junction</string>
-			<key>uid</key>
-			<string>6AAF51CA-1EE9-4CB8-B632-1B83BBD40B45</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>## Setup
@@ -1877,9 +1659,6 @@ function run() {
 Query DeepSeek via the `deepseek` keyword
 
 View Chat History with ⌥↩ in the `deepseek` keyword. Each result shows the first question as the title and the last as the subtitle.
-
-&lt;kbd&gt;↩&lt;/kbd&gt; to archive the current chat and load the selected one. Older chats can be trashed with the `Delete` [Universal Action](https://www.alfredapp.com/help/features/universal-actions/). Select multiple chats with the [File Buffer](https://www.alfredapp.com/help/features/file-search/#file-buffer).
-
 </string>
 	<key>uidata</key>
 	<dict>
@@ -1889,13 +1668,6 @@ View Chat History with ⌥↩ in the `deepseek` keyword. Each result shows the f
 			<real>1025</real>
 			<key>ypos</key>
 			<real>220</real>
-		</dict>
-		<key>0052DD7D-01DA-4E09-8B83-3F4994975B5F</key>
-		<dict>
-			<key>xpos</key>
-			<real>1385</real>
-			<key>ypos</key>
-			<real>840</real>
 		</dict>
 		<key>009F4B0B-7B7E-455F-9EA7-51334DBA92F1</key>
 		<dict>
@@ -1958,13 +1730,6 @@ View Chat History with ⌥↩ in the `deepseek` keyword. Each result shows the f
 			<real>455</real>
 			<key>ypos</key>
 			<real>85</real>
-		</dict>
-		<key>2DFDEB25-8ABB-4A11-A363-0879F9878137</key>
-		<dict>
-			<key>xpos</key>
-			<real>865</real>
-			<key>ypos</key>
-			<real>840</real>
 		</dict>
 		<key>2F3B5565-0BBD-4DC6-962B-BEF7277AC599</key>
 		<dict>
@@ -2070,13 +1835,6 @@ View Chat History with ⌥↩ in the `deepseek` keyword. Each result shows the f
 			<key>ypos</key>
 			<real>75</real>
 		</dict>
-		<key>98D8AB67-AA1E-452D-9E1D-3BE47B471BA7</key>
-		<dict>
-			<key>xpos</key>
-			<real>1210</real>
-			<key>ypos</key>
-			<real>840</real>
-		</dict>
 		<key>A4782A1E-2A93-401B-9CB7-1D8770AD510E</key>
 		<dict>
 			<key>xpos</key>
@@ -2133,13 +1891,6 @@ View Chat History with ⌥↩ in the `deepseek` keyword. Each result shows the f
 			<key>ypos</key>
 			<real>360</real>
 		</dict>
-		<key>BD3EE72E-D542-4AEB-AED1-EA3C1F7BF6EC</key>
-		<dict>
-			<key>xpos</key>
-			<real>1040</real>
-			<key>ypos</key>
-			<real>840</real>
-		</dict>
 		<key>BEF31BF9-C0C4-47F4-9ECA-3D50C2A84EE7</key>
 		<dict>
 			<key>xpos</key>
@@ -2176,13 +1927,6 @@ View Chat History with ⌥↩ in the `deepseek` keyword. Each result shows the f
 		<dict>
 			<key>xpos</key>
 			<real>65</real>
-			<key>ypos</key>
-			<real>840</real>
-		</dict>
-		<key>C81D4557-D55C-4B23-8FB3-B28519D292A0</key>
-		<dict>
-			<key>xpos</key>
-			<real>690</real>
 			<key>ypos</key>
 			<real>840</real>
 		</dict>
