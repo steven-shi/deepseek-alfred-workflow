@@ -2018,6 +2018,27 @@ View Chat History with ⌥↩ in the `deepseek` keyword. Each result shows the f
 			<key>config</key>
 			<dict>
 				<key>default</key>
+				<string>https://api.deepseek.com/v1/chat/completions</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>DeepSeek API endpoint URL</string>
+			<key>label</key>
+			<string>DeepSeek API Endpoint</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>deepseek_api_endpoint</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
 				<string>deepseek</string>
 				<key>placeholder</key>
 				<string></string>
@@ -2059,24 +2080,19 @@ View Chat History with ⌥↩ in the `deepseek` keyword. Each result shows the f
 			<dict>
 				<key>default</key>
 				<string>deepseek-chat</string>
-				<key>pairs</key>
-				<array>
-					<array>
-						<string>DeepSeek Chat</string>
-						<string>deepseek-chat</string>
-					</array>
-					<array>
-						<string>DeepSeek Reasoner</string>
-						<string>deepseek-reasoner</string>
-					</array>
-				</array>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
 			</dict>
 			<key>description</key>
-			<string></string>
+			<string>Enter model name like deepseek-chat, deepseek-reasoner, or other available DeepSeek models</string>
 			<key>label</key>
 			<string>Model</string>
 			<key>type</key>
-			<string>popupbutton</string>
+			<string>textfield</string>
 			<key>variable</key>
 			<string>deepseek_model</string>
 		</dict>
@@ -2129,10 +2145,6 @@ View Chat History with ⌥↩ in the `deepseek` keyword. Each result shows the f
 	</array>
 	<key>variables</key>
 	<dict>
-		<key>deepseek_api_endpoint</key>
-		<string>https://api.deepseek.com/v1/chat/completions</string>
-		<key>deepseek_model_override</key>
-		<string></string>
 	</dict>
 	<key>version</key>
 	<string>1.0</string>

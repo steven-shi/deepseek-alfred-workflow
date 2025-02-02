@@ -200,7 +200,7 @@ function run(argv) {
   const apiEndpointInitHasPath = apiEndpointInit.replace(/^https?:\/\//, "").includes("/")
   const apiEndpoint = apiEndpointInitHasPath ? apiEndpointInit : `${apiEndpointInit}/v1/chat/completions`
   const systemPrompt = envVar("system_prompt")
-  const model = envVar("deepseek_model_override") ? envVar("deepseek_model_override") : "deepseek-chat"
+  const model = envVar("deepseek_model") ? envVar("deepseek_model") : "deepseek-chat"
   const chatFile = `${envVar("alfred_workflow_data")}/chat.json`
   const pidStreamFile = `${envVar("alfred_workflow_cache")}/pid.txt`
   const streamFile = `${envVar("alfred_workflow_cache")}/stream.txt`
