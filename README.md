@@ -39,4 +39,4 @@ This workflow is a port of the [OpenAI Alfred Workflow](https://github.com/alfre
 
 ## License
 
-[MIT](LICENSE)
+This project is licensed under the [BSD 3-Clause License](LICENSE).
